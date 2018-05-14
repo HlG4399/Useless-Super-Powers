@@ -114,6 +114,7 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 f63ee3e0ff32bd3f0aa800abef84d932 Assembly-UnityScript.dll:.FaceAnimations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Stealth
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Teleport
+57cde689c32cabad6b32f757478b4e30 Assembly-CSharp.dll:.CreateRole
 88998f88a34aea93ee490526914783ac Assembly-CSharp.dll:.CamPos
 40fc22a70d524244b3c2eebe832141e3 Assembly-UnityScript.dll:.ChangeFaces
 fc1e0f4d8439d9928083474691511a13 UnityEngine.Networking.dll:UnityEngine.Networking.NetworkAnimator
@@ -140,6 +141,6 @@ bc68edb0af574bf79f9550ead8ebae5c UnityEngine.HoloLens.dll:UnityEngine.Audio.Audi
 c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingCollider
 45f3431f0103c41611e8d4eec3d439df UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.SpatialMappingRenderer
 4a28b17bf3f87bbd1f2edf23445def87 Assembly-UnityScript.dll:.Character_Animations
-05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.NetworkManager
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HallManager
 7a20e69f6ca04695637522c5cba781dd Assembly-CSharp.dll:.Character_Animations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CharacterSerializer

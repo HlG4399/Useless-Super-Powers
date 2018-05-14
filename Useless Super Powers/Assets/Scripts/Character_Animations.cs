@@ -7,7 +7,7 @@ public class Character_Animations : NetworkBehaviour
     private Animator animator;//控制玩家动作的动画切换
     private float v, run;//玩家行走速度与冲刺速度
     public static float h;//控制玩家转动角度
-    public Material[] Character_Material;//存储玩家角色的材质，根据玩家选择角色的不同自动设置其材质球
+    //public Material[] Character_Material;//存储玩家角色的材质，根据玩家选择角色的不同自动设置其材质球
 
     /// <summary>
     /// 控制玩家行动
@@ -61,26 +61,25 @@ public class Character_Animations : NetworkBehaviour
     /// </summary>
     public override void OnStartLocalPlayer()//NetworkBehaviour自带的虚方法重写
     {
-        animator = GetComponent<Animator>();
         CamPos.follow = this.transform;
-        //根据RoleID自动设置角色的技能
-        switch (ChooseRole.RoleID)
-        {
-            case 1:
-                GetComponent<Plunder>().enabled = true;
-                break;
-            case 2:
-                GetComponent<Stealth>().enabled = true;
-                break;
-            case 3:
-                GetComponent<Teleport>().enabled = true;
-                break;
-        }
-        //根据RoleID自动设置角色的材质球
-        foreach (Transform child in this.transform)
-        {
-            child.gameObject.GetComponent<SkinnedMeshRenderer>().material = Character_Material[ChooseRole.RoleID - 1];
-            break;
-        }
+        ////根据RoleID自动设置角色的技能
+        //switch (ChooseRole.RoleID)
+        //{
+        //    case 1:
+        //        GetComponent<Plunder>().enabled = true;
+        //        break;
+        //    case 2:
+        //        GetComponent<Stealth>().enabled = true;
+        //        break;
+        //    case 3:
+        //        GetComponent<Teleport>().enabled = true;
+        //        break;
+        //}
+        ////根据RoleID自动设置角色的材质球
+        //foreach (Transform child in this.transform)
+        //{
+        //    child.gameObject.GetComponent<SkinnedMeshRenderer>().material = Character_Material[ChooseRole.RoleID - 1];
+        //    break;
+        //}
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 /// </summary>
 public class ChooseRole : MonoBehaviour
 {
-    public static int RoleID;//利用角色ID来区分玩家选择的角色
+    public static int RoleID = 1;//利用角色ID来区分玩家选择的角色
 
     /// <summary>
     /// 玩家在选择角色时，与其交互的UI组件会调用这个函数
