@@ -62,6 +62,7 @@ public class Character_Animations : NetworkBehaviour
     public override void OnStartLocalPlayer()//NetworkBehaviour自带的虚方法重写
     {
         CamPos.follow = this.transform;
+        animator = this.GetComponent<Animator>();
         ////根据RoleID自动设置角色的技能
         //switch (ChooseRole.RoleID)
         //{
