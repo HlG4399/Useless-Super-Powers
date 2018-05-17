@@ -9,6 +9,12 @@ public class Character_Animations : NetworkBehaviour
     public static float h;//控制玩家转动角度
     //public Material[] Character_Material;//存储玩家角色的材质，根据玩家选择角色的不同自动设置其材质球
 
+    void Start()
+    {
+        CamPos.follow = this.transform;
+        animator = this.GetComponent<Animator>();
+    }
+
     /// <summary>
     /// 控制玩家行动
     /// </summary>
@@ -61,8 +67,6 @@ public class Character_Animations : NetworkBehaviour
     /// </summary>
     public override void OnStartLocalPlayer()//NetworkBehaviour自带的虚方法重写
     {
-        CamPos.follow = this.transform;
-        animator = this.GetComponent<Animator>();
         ////根据RoleID自动设置角色的技能
         //switch (ChooseRole.RoleID)
         //{

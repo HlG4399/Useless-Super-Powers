@@ -74,7 +74,7 @@ public class HallManager : MonoBehaviour
     //游戏状态逻辑
     void OnGaming()
     {
-        //控制自己的球体
+        //隐身自己的球体
         float x = Input.GetAxis("Horizontal");
         float y = Input.GetAxis("Vertical");
         myChar.AddForce(new Vector3(x, 0, y));

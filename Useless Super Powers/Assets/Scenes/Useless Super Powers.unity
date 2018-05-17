@@ -120,7 +120,7 @@ GameObject:
   - component: {fileID: 150366948}
   - component: {fileID: 150366947}
   m_Layer: 0
-  m_Name: NetworkManager
+  m_Name: Manager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -174,12 +174,16 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 0}
+  m_PlayerPrefab: {fileID: 1273450095298104, guid: d04afb88fed41824d8e9ba27acc48fed,
+    type: 2}
   m_AutoCreatePlayer: 0
   m_PlayerSpawnMethod: 1
   m_OfflineScene: 
   m_OnlineScene: 
-  m_SpawnPrefabs: []
+  m_SpawnPrefabs:
+  - {fileID: 1273450095298104, guid: d04afb88fed41824d8e9ba27acc48fed, type: 2}
+  - {fileID: 1777567904361148, guid: e22a2546d606e2a468063ca7b419bded, type: 2}
+  - {fileID: 1712482855626006, guid: 264e1b0a3ac7c2049b99fbd1612a08d9, type: 2}
   m_CustomConfig: 0
   m_MaxConnections: 4
   m_ConnectionConfig:
