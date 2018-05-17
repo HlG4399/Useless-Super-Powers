@@ -15,6 +15,7 @@ public class CreateRole : NetworkManager
 
     public override void OnClientConnect(NetworkConnection conn)
     {
+        GameObject.Find("SyncRoleID").SendMessage("CmdSetID", ChooseRole.RoleID);
         ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
         //玩家物体在网络HLAPI中有点特殊，NetworkManager对玩家物体的处理流程是：
         //将包含NetworkIdentity组件的预设体注册为派生预设体

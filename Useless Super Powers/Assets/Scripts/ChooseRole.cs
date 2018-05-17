@@ -18,21 +18,6 @@ public class ChooseRole : NetworkBehaviour
     public void SetID(int id)
     {
         RoleID = id;
-        if(isClient) CmdSetID(id);
         SceneManager.LoadScene("Useless Super Powers");
-    }
-
-    [Command]
-    public void CmdSetID(int id)
-    {
-        RpcSetID(id);
-        Debug.Log("服务器端" + RoleID);
-    }
-
-    [ClientRpc]
-    public void RpcSetID(int id)
-    {
-        RoleID = id;
-        Debug.Log("客户端" + RoleID);
     }
 }

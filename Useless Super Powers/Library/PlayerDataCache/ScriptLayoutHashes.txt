@@ -144,3 +144,4 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.VR.WSA.Spa
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.HallManager
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.Character_Animations
 05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.CharacterSerializer
+05524b8f659e7bfe5756d1335fec24ba Assembly-CSharp.dll:.SyncRoleID

@@ -4,9 +4,9 @@ using UnityEngine.Networking;
 
 public class Character_Animations : NetworkBehaviour
 {
-    private Animator animator;//控制玩家动作的动画切换
+    private Animator animator;//隐身玩家动作的动画切换
     private float v, run;//玩家行走速度与冲刺速度
-    public static float h;//控制玩家转动角度
+    public static float h;//隐身玩家转动角度
     //public Material[] Character_Material;//存储玩家角色的材质，根据玩家选择角色的不同自动设置其材质球
 
     void Start()
@@ -16,7 +16,7 @@ public class Character_Animations : NetworkBehaviour
     }
 
     /// <summary>
-    /// 控制玩家行动
+    /// 隐身玩家行动
     /// </summary>
     void Update()
     {
@@ -48,7 +48,7 @@ public class Character_Animations : NetworkBehaviour
     }
 
     /// <summary>
-    /// 控制玩家冲刺
+    /// 隐身玩家冲刺
     /// </summary>
     void Sprinting()
     {
