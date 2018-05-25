@@ -6,6 +6,7 @@ using UnityEngine.Networking;
 public class CreateRole : NetworkManager
 {
     public GameObject[] players;
+    public static NetworkConnection connection;
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
     {
@@ -15,10 +16,8 @@ public class CreateRole : NetworkManager
 
     public override void OnClientConnect(NetworkConnection conn)
     {
-        //GameObject SyncRoleID= (GameObject)GameObject.Instantiate(SyncManager, new Vector3(0, 0, 0), Quaternion.identity);
-        //NetworkServer.Spawn(SyncRoleID);
-        GameObject.Find("SyncManager").SendMessage("CmdSetID", ChooseRole.RoleID);
-        ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
+        connection = conn;
+        //ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
         //玩家物体在网络HLAPI中有点特殊，NetworkManager对玩家物体的处理流程是：
         //将包含NetworkIdentity组件的预设体注册为派生预设体
         //客户端连接到服务器
