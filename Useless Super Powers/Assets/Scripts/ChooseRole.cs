@@ -10,7 +10,7 @@ using UnityEngine.Networking;
 public class ChooseRole : NetworkBehaviour
 {
     public static int RoleID = 1;//利用角色ID来d区分玩家选择的角色
-    public GameObject SyncRoleID;
+    public GameObject CreateRole;
 
     /// <summary>
     /// 玩家在选择角色时，与其交互的UI组件会调用这个函数
@@ -20,7 +20,7 @@ public class ChooseRole : NetworkBehaviour
     {
         RoleID = id;
         CmdSetID(id);
-        SyncRoleID.SetActive(true);
+        CreateRole.SetActive(true);
         //SceneManager.LoadScene("Useless Super Powers");
     }
 

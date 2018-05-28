@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Character_Animations.cs" />
      <Compile Include="Assets\Scripts\ChooseRole.cs" />
      <Compile Include="Assets\Scripts\CreateRole.cs" />
+     <Compile Include="Assets\Scripts\GetConnection.cs" />
      <Compile Include="Assets\Scripts\NetworkManager\CharacterSerializer.cs" />
      <Compile Include="Assets\Scripts\NetworkManager\HallManager.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Plunder.cs" />
