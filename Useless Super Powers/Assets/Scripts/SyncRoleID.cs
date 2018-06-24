@@ -10,6 +10,7 @@ public class SyncRoleID : NetworkManager
     void Start()
     {
         ClientScene.AddPlayer(CreateRole.connection, (short)ChooseRole.RoleID);
+        Debug.Log("hehe");
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)

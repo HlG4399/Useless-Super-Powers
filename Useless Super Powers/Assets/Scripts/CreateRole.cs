@@ -7,16 +7,12 @@ public class CreateRole : NetworkManager
 {
     public GameObject[] players;
     public static NetworkConnection connection;
+    public GameObject Canvas;
 
-    void Start()
+    public override void OnClientConnect(NetworkConnection conn)
     {
-        ClientScene.AddPlayer(CreateRole.connection, (short)ChooseRole.RoleID);
-    }
-
-    public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
-    {
-        GameObject player = (GameObject)GameObject.Instantiate(players[ChooseRole.RoleID - 1], new Vector3(0, 0, 0), Quaternion.identity);
-        NetworkServer.AddPlayerForConnection(conn, player, playerControllerId);
+        connection = conn;
+        Canvas.SetActive(true);
     }
 
     //public override void OnClientConnect(NetworkConnection conn)
