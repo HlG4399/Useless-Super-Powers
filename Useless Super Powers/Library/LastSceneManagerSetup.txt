@@ -1,4 +1,0 @@
-sceneSetups:
-- path: Assets/Scenes/Useless Super Powers.unity
-  isLoaded: 1
-  isActive: 1

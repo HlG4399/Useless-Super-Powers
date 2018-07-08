@@ -6,13 +6,22 @@ using UnityEngine.Networking;
 public class CreateRole : NetworkManager
 {
     public GameObject[] players;
-    public static NetworkConnection connection;
     public GameObject Canvas;
 
     public override void OnClientConnect(NetworkConnection conn)
     {
-        connection = conn;
         Canvas.SetActive(true);
+    }
+
+    public override void OnServerReady(NetworkConnection conn)
+    {
+        ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
+    }
+
+    public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
+    {
+        GameObject player = (GameObject)GameObject.Instantiate(players[ChooseRole.RoleID - 1], new Vector3(0, 0, 0), Quaternion.identity);
+        NetworkServer.AddPlayerForConnection(conn, player, (short)ChooseRole.RoleID);
     }
 
     //public override void OnClientConnect(NetworkConnection conn)

@@ -6,8 +6,5 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Hall.unity
-    guid: 56d217b91070a11438a272ea491b5c3f
-  - enabled: 1
     path: Assets/Scenes/Useless Super Powers.unity
     guid: c9c583b593d3a9b4f9531dff6b748e1e

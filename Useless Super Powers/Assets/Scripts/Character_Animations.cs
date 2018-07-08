@@ -11,16 +11,16 @@ public class Character_Animations : NetworkBehaviour
 
     void Start()
     {
-        CamPos.follow = this.transform;
         animator = this.GetComponent<Animator>();
     }
 
     /// <summary>
-    /// 隐身玩家行动
+    /// 玩家行动
     /// </summary>
     void Update()
     {
         if (!isLocalPlayer) return;
+        CamPos.follow = this.transform;
         v = Input.GetAxis("Vertical");
         h = Input.GetAxis("Horizontal");
         Sprinting();
@@ -48,7 +48,7 @@ public class Character_Animations : NetworkBehaviour
     }
 
     /// <summary>
-    /// 隐身玩家冲刺
+    /// 玩家冲刺
     /// </summary>
     void Sprinting()
     {

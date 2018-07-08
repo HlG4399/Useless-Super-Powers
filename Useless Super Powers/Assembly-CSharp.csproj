@@ -55,13 +55,12 @@
      <Compile Include="Assets\Scripts\Character_Animations.cs" />
      <Compile Include="Assets\Scripts\ChooseRole.cs" />
      <Compile Include="Assets\Scripts\CreateRole.cs" />
-     <Compile Include="Assets\Scripts\GetConnection.cs" />
+     <Compile Include="Assets\Scripts\MyNetworkManager.cs" />
      <Compile Include="Assets\Scripts\NetworkManager\CharacterSerializer.cs" />
      <Compile Include="Assets\Scripts\NetworkManager\HallManager.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Plunder.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Stealth.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Teleport.cs" />
-     <Compile Include="Assets\Scripts\SyncRoleID.cs" />
      <None Include="Assets\Medieval_Toon_Character\ReadMe.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
