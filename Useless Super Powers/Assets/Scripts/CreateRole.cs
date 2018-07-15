@@ -15,7 +15,7 @@ public class CreateRole : NetworkManager
 
     public override void OnServerReady(NetworkConnection conn)
     {
-        ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
+        //ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)

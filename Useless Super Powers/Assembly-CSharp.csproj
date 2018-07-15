@@ -51,13 +51,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CamPos.cs" />
      <Compile Include="Assets\Scripts\Character_Animations.cs" />
-     <Compile Include="Assets\Scripts\ChooseRole.cs" />
      <Compile Include="Assets\Scripts\CreateRole.cs" />
-     <Compile Include="Assets\Scripts\MyNetworkManager.cs" />
-     <Compile Include="Assets\Scripts\NetworkManager\CharacterSerializer.cs" />
-     <Compile Include="Assets\Scripts\NetworkManager\HallManager.cs" />
+     <Compile Include="Assets\Scripts\NetworkManager\CamPos.cs" />
+     <Compile Include="Assets\Scripts\NetworkManager\ChooseRole.cs" />
+     <Compile Include="Assets\Scripts\StartGame\Btn.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Plunder.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Stealth.cs" />
      <Compile Include="Assets\Scripts\SuperPower\Teleport.cs" />
