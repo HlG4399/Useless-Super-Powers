@@ -9,7 +9,7 @@ public class PlayMusic : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        sound = this.GetComponent<AudioSource>();
+        DontDestroyOnLoad(sound);
     }
 
     public void playMusic()
