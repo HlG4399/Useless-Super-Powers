@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartGame.unity
+    guid: 9058264ffba1b0a408ede20b49749779
+  - enabled: 1
     path: Assets/Scenes/Useless Super Powers.unity
     guid: c9c583b593d3a9b4f9531dff6b748e1e

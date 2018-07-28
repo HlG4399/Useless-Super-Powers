@@ -7,6 +7,7 @@ public class CreateRole : NetworkManager
 {
     public GameObject[] players;
     public GameObject Canvas;
+    public GameObject[] lifes;
 
     public override void OnClientConnect(NetworkConnection conn)
     {
@@ -16,6 +17,7 @@ public class CreateRole : NetworkManager
     public override void OnServerReady(NetworkConnection conn)
     {
         //ClientScene.AddPlayer(conn, (short)ChooseRole.RoleID);
+        lifes[ChooseRole.RoleID - 1].SetActive(true);
     }
 
     public override void OnServerAddPlayer(NetworkConnection conn, short playerControllerId)
